@@ -1,9 +1,26 @@
 #! /bin/bash
 
+set +e
+docker stop devops-db
+docker rm devops-db
+set -e
+
 #builds a new mysql database image
 
 pushd ~/config/docker/devops-db
 docker build --tag devops-db:latest .
+popd
+
+#builds Java data image
+
+pushd ~/config/docker/devops-db-data-java
+docker build --tag devops-db-data-java:latest .
+popd
+
+#builds PHP data image
+
+pushd ~/config/docker/devops-db-data-php
+docker build --tag devops-db-data-php:latest .
 popd
 
 #checks for java data store
