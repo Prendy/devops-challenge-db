@@ -57,4 +57,4 @@ fi
 
 echo "Running MYSQL server"
 
-docker run --name devops-db -p 3306:3306 --volumes-from devops-db-data-java --volumes-from devops-db-data-php -d devops-db:latest
+docker run --name devops-db -e MYSQL_ROOT_PASSWORD=devops -p 3306:3306 --volumes-from devops-db-data-java --volumes-from devops-db-data-php -d devops-db:latest
