@@ -1,5 +1,3 @@
-drop database conygre;
-
 CREATE DATABASE IF NOT EXISTS conygre;
 use conygre;
 create table compact_discs (id int primary key auto_increment,title varchar (50),artist varchar(30),tracks int,price double);
