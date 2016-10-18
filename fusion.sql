@@ -19,6 +19,10 @@
 -- Table structure for table `fusion67tl3_admin`
 --
 
+CREATE DATABASE conygre;
+
+CREATE DATABASE fusion;
+
 USE fusion;
 
 DROP TABLE IF EXISTS `fusion67tl3_admin`;
