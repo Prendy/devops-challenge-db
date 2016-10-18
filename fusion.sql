@@ -19,6 +19,8 @@
 -- Table structure for table `fusion67tl3_admin`
 --
 
+USE fusion;
+
 DROP TABLE IF EXISTS `fusion67tl3_admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
