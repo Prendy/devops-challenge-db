@@ -1,3 +1,5 @@
+#! /bin/bash
+
 #builds a new mysql database image
 
 pushd ~/config/docker/devops-db
@@ -38,4 +40,4 @@ fi
 
 echo "Running MYSQL server"
 
-docker run --name devops-db -p 3306:3306 --volumes-from devops-db-data-java --volumes-from devops-db-data-php -d devops-db:latest 
+docker run --name devops-db -p 3306:3306 --volumes-from devops-db-data-java --volumes-from devops-db-data-php -d devops-db:latest
